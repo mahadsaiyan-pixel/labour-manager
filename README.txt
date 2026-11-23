@@ -1,24 +1,29 @@
-LABOUR MANAGER — ANDROID INSTALLATION
+MAHU INTERIOR – Labour Manager V2
+=================================
+Mobile-first offline web app for Android Chrome.
 
-This is an offline-first Progressive Web App (PWA). It stores records in the browser on the phone and supports JSON backup/restore plus CSV report export.
+Files:
+- index.html
+- mahu-logo.jpg
+- manifest.webmanifest
+- sw.js
 
-IMPORTANT: For installation and offline service-worker support, the app must be opened from a secure HTTPS address (or localhost). It will not install as a PWA by simply opening index.html from a file manager.
+Publish all four files at the ROOT of your GitHub Pages repository.
+Then open the GitHub Pages HTTPS address in Android Chrome and choose
+Install app / Add to Home Screen.
 
-QUICK START
-1. Upload the entire folder contents to any HTTPS static website host (for example, your own hosting).
-2. Open the hosted index.html link in Chrome on Android.
-3. Use Chrome menu > Add to Home screen / Install app.
-4. Open the app from the new home-screen icon. After its first successful load, the interface can work offline.
-5. Use Backup & Restore > Download full backup regularly and save the JSON file somewhere safe.
+Features:
+- Worker profiles with individual daily wages
+- Attendance: present, half day, absent
+- Advance, Running Payment and Salary Payment records
+- All Expenses combines labour payments and other expenses
+- Dark/light theme toggle
+- Local automatic backup on every save + manual JSON backup/restore
+- Date-range reports, Excel-compatible CSV export, print/save as PDF
 
-FEATURES
-- Add/edit/archive workers with individual daily wage rates.
-- Attendance: Present (100%), Half day (50%), Absent (0%).
-- Expenses by date and category.
-- Advances and salary payments.
-- Worker earned/paid balance view.
-- Date-range reports and CSV export.
-- Full JSON backup and restore.
-
-DATA NOTE
-Records are stored locally in this browser on this device. They do not automatically sync to another phone. Back up regularly. Clearing Chrome site data can erase records.
+IMPORTANT:
+- Data is stored locally in this browser/device. Automatic backup is local,
+  not cloud backup. Download a JSON backup regularly and save it to Drive.
+- CSV files open in Excel. PDF export uses Chrome's Print > Save as PDF.
+- If replacing an older hosted version, upload/replace all files at repository
+  root and wait for GitHub Pages deployment.
